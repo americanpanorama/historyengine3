@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background-color: #ebebeb;
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  color: #4b4b4b;
+}
+
+.App {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: white;
+  min-height: calc(100vh - 40px);
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+a {
+  color: #428bca;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#map {
+  width: 80vw;
+  height: 300px;
+}
+
+.leaflet-container {
+  height: 100%;
+  weight: 100%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about nav {
+  order: -1;
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: auto 300px;
+  }
+
+  .about nav {
+    grid-column: 2 / span 1;
+  }
+
+  .about nav a {
+    display: block;
+  }
+}

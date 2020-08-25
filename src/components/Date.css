@@ -1,0 +1,41 @@
+#timeline {
+  position: relative;
+}
+#timeline #episodes {
+  display: flex;
+  align-items: stretch;
+
+  width: 6000px;
+  margin-left: calc(270px * -3.5 + 50vw - 125px);
+}
+
+#timeline #episodes .episodeCard {
+  display: inline-block;
+  width: 250px;
+  margin: 10px;
+}
+
+#timeline #episodes .episodeCard .date {
+  height: 50px;
+  color: white;
+  background-color: blue;
+  margin: 0 -10px 20px -10px;
+  text-align: center;
+}
+
+#timeline #episodes .episodeCard .episodeSnippet {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#timeline button.previous {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+#timeline button.next {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
